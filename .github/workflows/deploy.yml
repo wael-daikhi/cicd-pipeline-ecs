@@ -52,6 +52,10 @@ jobs:
           REGISTRY: ${{ steps.ecr-login.outputs.registry }}
           IMAGE_TAG: ${{ github.sha }}
         run: |
+          if [ -z "$REGISTRY" ]; then
+            echo "Error: ECR registry not set. Check AWS credentials."
+            exit 1
+          fi
           IMAGE="$REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
           docker build -t "$IMAGE" ./app
           docker push "$IMAGE"
