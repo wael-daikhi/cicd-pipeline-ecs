@@ -22,6 +22,8 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: pip install -r app/requirements-dev.txt
+      - name: Install project 
+        run: pip install -e .
       - name: Run tests
         run: PYTHONPATH=. pytest app/tests/ -v
   # ─── 2. Build the image and push to ECR ────────────────────────
