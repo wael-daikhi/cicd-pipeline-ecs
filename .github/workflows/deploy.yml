@@ -59,7 +59,7 @@ jobs:
           IMAGE="$REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
           docker build -t "$IMAGE" ./app
           docker push "$IMAGE"
-          echo "image=$IMAGE" >> "$GITHUB_OUTPUT"
+          echo "image=$IMAGE" >> $GITHUB_OUTPUT
           echo "Successfully built and pushed: $IMAGE"
 
   # ─── 3. Deploy to STAGING (automatic) ──────────────────────────
