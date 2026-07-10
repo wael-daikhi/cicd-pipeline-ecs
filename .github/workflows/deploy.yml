@@ -60,6 +60,7 @@ jobs:
           docker build -t "$IMAGE" ./app
           docker push "$IMAGE"
           echo "image=$IMAGE" >> "$GITHUB_OUTPUT"
+          echo "Successfully built and pushed: $IMAGE"
 
   # ─── 3. Deploy to STAGING (automatic) ──────────────────────────
   deploy-staging:
