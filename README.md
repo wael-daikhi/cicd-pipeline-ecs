@@ -151,5 +151,5 @@ rollback means redeploying a known SHA. Tagging everything `latest` loses that.
 
 ## Author
 Wael Daikhi
-<a href="https://github.com/wael-daikhi" target="_blank">GitHub</a> · 
-<a href="https://linkedin.com/in/wael-daikhi" target="_blank">LinkedIn</a>
+<a href="https://github.com/wael-daikhi" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+<a href="https://linkedin.com/in/wael-daikhi" target="_blank" rel="noopener noreferrer">LinkedIn</a>
